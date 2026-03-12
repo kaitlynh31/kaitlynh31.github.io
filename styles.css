@@ -1,10 +1,15 @@
 nav {
-  position: sticky;
+  overflow: hidden;
+  position: fixed;
   top: 0px;
   left: 0px;
   width: 100%;
-  background-color: var(--white);
-  margin-left: auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 10;
+  /*margin-left: auto;*/
+  backdrop-filter: blur(5px);
+  padding: 4px 2em;
+  box-sizing: border-box;
 }
 nav ul {
   display: flex;
@@ -68,7 +73,7 @@ header,
 section {
   /*margin: 2em auto;*/
   width: min(75em, 100%);
-  background-color: rgba(100, 148, 237, 0.248);
+  /*background-color: rgba(100, 148, 237, 0.248);*/
   padding: min(2dm, 15%);
   border-radius: 1em;
 }
@@ -80,29 +85,77 @@ main img {
   object-position: bottom;
 }
 
-.social-links-container {
+.terminal {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  width: 480px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  font-family: monospace;
+  overflow: hidden;
+  margin: 40px auto;
+}
+
+.terminal-bar {
+  background-color: #323232;
+  padding: 5px 9px;
   display: flex;
-  gap: 10px;
-}
-
-.social-links {
-  display: inline-flex;
-  justify-content: center;
   align-items: center;
-  width: 2em;
-  height: 2em;
-  background-color: transparent;
-  border: 0.2rem solid cornflowerblue;
-  border-radius: 50%;
-  color: cornflowerblue;
-  font-size: 1.5rem;
-  transition: 0.2s linear;
-  text-decoration: none;
+  gap: 6px;
 }
 
-.social-links:hover {
-  scale: 1.3;
-  color: white;
-  background-color: cornflowerblue;
-  filter: drop-shadow(0 0 10px cornflowerblue);
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.dot.red {
+  background-color: #ff5f57;
+}
+.dot.yellow {
+  background-color: #febc2e;
+}
+.dot.green {
+  background-color: #28c840;
+}
+
+.terminal-title {
+  color: #aaa;
+  font-size: 0.8rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.terminal-body {
+  padding: 16px;
+  min-height: 80px;
+}
+
+.terminal-line {
+  color: #f0f0f0;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.prompt {
+  color: cornflowerblue;
+  font-weight: bold;
+}
+
+.cursor {
+  animation: blink 1s step-start infinite;
+  color: #f0f0f0;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+main {
+  margin-top: 80px;
+}
+body {
+  margin: 0;
+  padding: 0 2em;
+  box-sizing: border-box;
 }
