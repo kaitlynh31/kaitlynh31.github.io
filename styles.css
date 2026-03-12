@@ -1,5 +1,5 @@
 nav {
-  position: fixed;
+  position: sticky;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -54,9 +54,9 @@ html {
 
 header,
 section {
-  margin: 2em auto;
+  /*margin: 2em auto;*/
   width: min(75em, 100%);
-  background-color: beige;
+  background-color: rgba(100, 148, 237, 0.248);
   padding: min(2dm, 15%);
   border-radius: 1em;
 }
