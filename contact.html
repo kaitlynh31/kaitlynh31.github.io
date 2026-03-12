@@ -13,19 +13,43 @@
   <body>
     <main>
       <h1>contact me!</h1>
-      <section class="contact section" id="contact">
-        <h2 class="section-title">Contact</h2>
-      </section>
-      <div class="social-links-container">
-        <a
-          class="social-links"
-          href="https://www.linkedin.com/in/kaitlyn-harvey/"
-        >
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a class="social-links" href="https://github.com/kaitlynh31">
-          <i class="fa-brands fa-github"></i>
-        </a>
+      <div class="contact-container">
+        <form action="/submit">
+          <h1>Contact Form</h1>
+          <div>
+            <label for="username">Name</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Full Name"
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+          </div>
+          <div>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+          </div>
+        </form>
+        <div class="social-links-container">
+          <a
+            class="social-links"
+            href="https://www.linkedin.com/in/kaitlyn-harvey/"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a class="social-links" href="https://github.com/kaitlynh31">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
       </div>
     </main>
   </body>

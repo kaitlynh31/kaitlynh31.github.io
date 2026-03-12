@@ -46,6 +46,9 @@ nav ul li a:hover {
 nav li:last-child {
   border: 2px solid cornflowerblue;
 }
+nav li:first-child {
+  margin-right: auto;
+}
 .main {
   margin-top: 100px;
   padding: 0 0.5em;
@@ -67,6 +70,7 @@ h1 {
 
 html {
   font-family: monospace;
+  background-color: beige;
 }
 
 header,

@@ -8,6 +8,7 @@ h1 {
 }
 html {
   font-family: monospace;
+  background-color: beige;
 }
 .social-links-container {
   display: flex;
