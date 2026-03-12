@@ -4,16 +4,23 @@ nav {
   left: 0px;
   width: 100%;
   background-color: var(lightblue);
+  margin-left: auto;
 }
 nav ul {
+  display: flex;
+  /*align-items: center;*/
+  justify-content: flex-end;
   list-style-type: none;
+  gap: 2em;
   margin: 0;
   padding: 0;
 }
+
 nav ul li {
   display: inline-block;
 }
 nav ul li a:hover {
+  text-decoration: underline;
   background-color: var(--gray1);
 }
 nav ul li a {
@@ -26,4 +33,37 @@ nav ul li a {
 .main {
   margin-top: 100px;
   padding: 0 0.5em;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20 vw;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+html {
+  font-family: monospace;
+}
+
+header,
+section {
+  margin: 2em auto;
+  width: min(75em, 100%);
+  background-color: beige;
+  padding: min(2dm, 15%);
+  border-radius: 1em;
+}
+
+main img {
+  max-width: 100%;
+  border-radius: 1em;
+  object-fit: cover;
+  object-position: bottom;
 }
