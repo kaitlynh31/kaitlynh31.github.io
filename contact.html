@@ -14,30 +14,32 @@
     <main>
       <h1>contact me!</h1>
       <div class="contact-container">
-        <form action="/submit">
-          <h1>Contact Form</h1>
-          <div>
-            <label for="username">Name</label>
-            <input
-              type="text"
-              name="username"
-              id="username"
-              placeholder="Full Name"
-            />
+        <form action="" class="contact-left">
+          <div class="contact-left-title">
+            <h2>Contact</h2>
+            <hr />
           </div>
-          <div>
-            <label for="email">Email</label>
-            <input
-              type="text"
-              name="email"
-              id="email"
-              placeholder="Email Address"
-            />
-          </div>
-          <div>
-            <input type="submit" value="Submit" />
-            <input type="reset" value="Reset" />
-          </div>
+          <input
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            class="contact-inputs"
+            required
+          />
+          <input
+            type="text"
+            name="email"
+            placeholder="Email Address"
+            class="contact-inputs"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            class="contact-inputs"
+            required
+          ></textarea>
+          <button type="submit">submit</button>
         </form>
         <div class="social-links-container">
           <a
