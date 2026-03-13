@@ -51,6 +51,22 @@
 .contact-inputs::placeholder {
   color: antiquewhite;
 }
+.contact-left button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(
+    270deg,
+    rgba(100, 148, 237, 0.676),
+    cornflowerblue
+  );
+  cursor: pointer;
+}
 h1 {
   margin: 0;
   display: flex;
@@ -88,4 +104,10 @@ html {
   color: white;
   background-color: cornflowerblue;
   filter: drop-shadow(0 0 10px cornflowerblue);
+}
+
+@media (max-width: 800px) {
+  .contact-inputs {
+    width: 80vw;
+  }
 }
