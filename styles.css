@@ -95,11 +95,11 @@ main img {
   object-position: bottom;
 }
 .headshot-img {
-  max-width: 100%;
-  width: 150px;
-  height: 150px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   object-fit: cover;
+  flex-shrink: 0;
 }
 .terminal {
   background-color: #1e1e1e;
@@ -169,6 +169,11 @@ main img {
 }
 main {
   margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
 }
 body {
   margin: 0;
@@ -339,4 +344,10 @@ contact h1 {
   .contact-right {
     padding: 28px 20px;
   }
+}
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
 }
