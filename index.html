@@ -6,16 +6,20 @@
     <title>Kaitlyn Harvey</title>
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <header>
       <nav>
         <ul>
           <li><a href="#">KAITLYN HARVEY</a></li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="previous-work.html">previous work</a></li>
-          <li><a href="projects.html">projects</a></li>
-          <li><a href="contact.html">contact me</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#previous-work">previous work</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#contact">contact me</a></li>
         </ul>
       </nav>
     </header>
@@ -23,6 +27,12 @@
       <div class="header">
         <h1>Hi, my name is Kaitlyn Harvey!</h1>
       </div>
+      <figure>
+        <img
+          src="headshot_corrected.png"
+          alt="Girl smiling in a white blouse in front of a white background"
+        />
+      </figure>
       <div class="terminal">
         <div class="terminal-bar">
           <span class="dot red"></span>
@@ -37,24 +47,92 @@
           </p>
         </div>
       </div>
-      <figure>
-        <img
-          src="IMG_5302.jpg"
-          alt="Girl smiling in front of a green lush background with a bridge"
-          width="720"
-          height="480"
-        />
-        <!--<figcaption>Crystal Springs Rhododendron Garden</figcaption> -->
-      </figure>
-      <figure>
-        <img
-          src="DSC03906.JPG"
-          alt="Girl smiling in front of Mt.Baker in Washington, OR"
-          width="500"
-          height="400"
-        />
-      </figure>
     </main>
+    <section class="about">
+      <section id="about">
+        <h2>about</h2>
+        <figure>
+          <img
+            src="IMG_5302.jpg"
+            alt="Girl smiling in front of a green lush background with a bridge"
+            width="720"
+            height="480"
+          />
+          <!--<figcaption>Crystal Springs Rhododendron Garden</figcaption> -->
+        </figure>
+      </section>
+    </section>
+    <section class="previous-work">
+      <section id="previous-work">
+        <a href="Kaitlyn Harvey.pdf" download="Harvey, Kaitlyn.pdf">
+          <button type="button">Download CV</button>
+        </a>
+      </section>
+    </section>
+    <section class="projects">
+      <section id="projects"></section>
+    </section>
+    <section class="contact">
+      <section id="contact">
+        <h1>CONTACT ME</h1>
+        <div class="contact-container">
+          <div class="contact-left">
+            <img
+              src="DSC03906.JPG"
+              alt="Girl smiling in front of Mt.Baker in Washington, OR"
+            />
+            <div class="social-links-container">
+              <a
+                class="social-links"
+                href="https://www.linkedin.com/in/kaitlyn-harvey/"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a class="social-links" href="https://github.com/kaitlynh31">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact-right"
+          >
+            <div class="contact-right-title">
+              <h2>contact</h2>
+              <hr />
+            </div>
+            <input
+              type="hidden"
+              name="access_key"
+              value="fc6e3209-e66a-4560-b449-cfbf9c1534b1"
+            />
+            <input
+              type="text"
+              name="name"
+              placeholder="Full Name"
+              class="contact-inputs"
+              required
+            />
+            <input
+              type="text"
+              name="email"
+              placeholder="Email Address"
+              class="contact-inputs"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              class="contact-inputs"
+              required
+            ></textarea>
+            <button type="submit">submit</button>
+          </form>
+        </div>
+      </section>
+    </section>
     <script src="script.js"></script>
   </body>
+  <footer></footer>
 </html>
