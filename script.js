@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.documentElement.style.scrollBehavior = "smooth";
 });
 
-const text = "hello, my name is Kaitlyn Harvey!";
+const text = "hello, welcome to my site!";
 const typedEl = document.querySelector(".typed");
 const cursorEl = document.querySelector(".cursor");
 let i = 0;
