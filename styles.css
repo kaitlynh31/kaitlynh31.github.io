@@ -88,7 +88,7 @@ h1,
 h2 {
   display: flex;
   align-items: center;
-  font-size: 5rem;
+  font-size: 4rem;
   /*font-weight: 500;*/
   margin-bottom: 30px;
   color: cornflowerblue;
@@ -355,7 +355,9 @@ contact h1 {
 
 .social-links-container {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .social-links {
@@ -379,7 +381,11 @@ contact h1 {
   background-color: cornflowerblue;
   filter: drop-shadow(0 0 10px cornflowerblue);
 }
-
+.social-links h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media (max-width: 800px) {
   .contact-container {
     flex-direction: column;
@@ -400,7 +406,7 @@ contact h1 {
   backdrop-filter: blur(5px);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0.6rem 2rem;
   z-index: 10;
   border-top: 1px solid rgba(100, 148, 237, 0.2);
@@ -419,16 +425,13 @@ contact h1 {
 .footer-nav a:hover {
   color: #333;
 }
-
 .footer-copy {
   font-size: 0.75rem;
   color: #888;
 }
-
 body {
   padding-bottom: 60px;
 }
-
 @media (max-width: 950px) {
   main {
     flex-direction: column;
@@ -474,15 +477,12 @@ body {
       height: 620px;
       min-width: 520px;
     }
-
     .terminal {
       width: 640px;
     }
-
     h1 {
       font-size: 4rem;
     }
-
     main {
       gap: 4rem;
       padding: 4rem;
@@ -545,4 +545,22 @@ body {
       border-radius: 24px;
     }
   }
+}
+
+/*projects section*/
+.nav-btn {
+  display: inline-block;
+  padding: 1em;
+  text-decoration: none;
+  color: black;
+  border: 2px solid cornflowerblue;
+  border-radius: 20px;
+  background-color: transparent;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background-color: cornflowerblue;
+  color: white;
 }
