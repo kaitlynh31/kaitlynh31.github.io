@@ -48,7 +48,25 @@ nav ul li a:hover {
   background-color: transparent;
   color: white;
 }
-
+.previous-work button {
+  background-color: transparent;
+  border-radius: 20px;
+  /*border: 2px solid cornflowerblue;*/
+  transition: 0.2s linear;
+}
+.previous-work button:hover {
+  background-color: cornflowerblue;
+}
+.previous-work button a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: var(--white);
+}
+.previous-work button a:hover {
+  background-color: transparent;
+  color: white;
+}
 nav li:last-child {
   border: 2px solid cornflowerblue;
 }
@@ -82,7 +100,7 @@ h2 {
 }
 html {
   font-family: monospace;
-  background-color: beige;
+  background-color: rgba(210, 180, 140, 0.137);
 }
 
 header,
@@ -281,6 +299,7 @@ body {
   box-shadow: 0 4px 18px rgba(100, 148, 237, 0.5);
   scale: 1.03;
 }
+
 .contact-left {
   display: flex;
   flex-direction: column;
@@ -357,11 +376,41 @@ contact h1 {
   flex-direction: column;
   gap: 0.2rem;
 }
+
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color:;
-  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 2rem;
+  z-index: 10;
+  border-top: 1px solid rgba(100, 148, 237, 0.2);
+}
+.footer-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: cornflowerblue;
+  font-size: 0.85rem;
+  transition: color 0.2s;
+}
+.footer-nav a:hover {
+  color: #333;
+}
+
+.footer-copy {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+body {
+  padding-bottom: 60px;
 }
