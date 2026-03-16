@@ -31,8 +31,6 @@ const sparkleSymbols = ["✦", "✧", "✦", "✧"];
 document.querySelectorAll(".btn").forEach((btn) => {
   btn.addEventListener("mouseenter", (e) => {
     const rect = btn.getBoundingClientRect();
-
-    // 4 fixed spawn points along the button edges
     const spawnPoints = [
       { x: rect.left + rect.width * 0.2, y: rect.top }, // top-left area
       { x: rect.left + rect.width * 0.8, y: rect.top }, // top-right area
