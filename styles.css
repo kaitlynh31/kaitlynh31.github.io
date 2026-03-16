@@ -104,6 +104,9 @@ h2 {
   display: flex;
   align-items: center;
 }
+h3 {
+  color: #87ae73;
+}
 html {
   font-family: monospace;
   background-color: rgba(210, 180, 140, 0.137);
