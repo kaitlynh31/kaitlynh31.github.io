@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kaitlyn Harvey</title>
-    <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -13,15 +12,45 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="desktop-nav">
         <ul>
           <li><a href="#">KAITLYN HARVEY</a></li>
           <li><a href="#about">about</a></li>
-          <li><a href="#previous-work">previous work</a></li>
           <li><a href="#skills">skills</a></li>
+          <li><a href="#previous-work">previous work</a></li>
           <li><a href="#projects">projects</a></li>
           <li><a href="#contact">contact me</a></li>
         </ul>
+      </nav>
+      <nav id="hamburger-nav">
+        <div style="margin-right: auto; padding: 1rem">
+          <a
+            href="#"
+            style="
+              font-weight: bold;
+              color: #87ae73;
+              text-decoration: none;
+              letter-spacing: 0.05em;
+            "
+            >KAITLYN HARVEY</a
+          >
+        </div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">about</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">skills</a></li>
+            <li>
+              <a href="#previous-work" onclick="toggleMenu()">previous work</a>
+            </li>
+            <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">contact me</a></li>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
@@ -60,10 +89,10 @@
           with a strong passion for cybersecurity, software engineering, and
           technology-driven problem solving. I am preparing for CompTIA
           Security+ certification to deepen my expertise in information
-          security. With five years of experience in the healthcare industry, I
-          bring a unique perspective on data security, compliance, and patient
-          information privacy. I aim to leverage my technical skills and
-          analytical mindset to protect and optimize digital systems in
+          security. <br /><br />With five years of experience in the healthcare
+          industry, I bring a unique perspective on data security, compliance,
+          and patient information privacy. I aim to leverage my technical skills
+          and analytical mindset to protect and optimize digital systems in
           high-impact environments.
         </p>
       </section>
@@ -78,9 +107,9 @@
       <button class="btn"><i class="fa-brands fa-java"></i>java</button>
       <button class="btn"><i class="fa-solid fa-database"></i>SQL</button>
       <button class="btn"><i class="fa-brands fa-python"></i>python</button>
-      <button class="btn"><img src="c++.png" alt="c++/c icon" />c++/c</button>
+      <button class="btn"><i class="fa-solid fa-c"></i>c++/c</button>
       <button class="btn"><i class="fa-brands fa-html5"></i>html5</button>
-      <button class="btn"><i class="fa-brands fa-css"></i>css</button>
+      <button class="btn"><i class="fa-brands fa-css3-alt"></i>css</button>
     </section>
     <section class="previous-work">
       <section id="previous-work">
