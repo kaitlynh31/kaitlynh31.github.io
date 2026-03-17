@@ -83,17 +83,20 @@
     </main>
     <section class="about" id="about">
       <h2>&lt; about /&gt;</h2>
-      <p>
-        I am a senior at Portland State University studying Computer Science,
-        with a strong passion for cybersecurity, software engineering, and
-        technology-driven problem solving. I am preparing for CompTIA Security+
-        certification to deepen my expertise in information security.
-        <br /><br />With five years of experience in the healthcare industry, I
-        bring a unique perspective on data security, compliance, and patient
-        information privacy. I aim to leverage my technical skills and
-        analytical mindset to protect and optimize digital systems in
-        high-impact environments.
-      </p>
+      <div class="about-card">
+        <p>
+          I am a senior at Portland State University studying Computer Science,
+          with a strong passion for cybersecurity, software engineering, and
+          technology-driven problem solving. I am preparing for CompTIA
+          Security+ certification to deepen my expertise in information
+          security.
+          <br /><br />With five years of experience in the healthcare industry,
+          I bring a unique perspective on data security, compliance, and patient
+          information privacy. I aim to leverage my technical skills and
+          analytical mindset to protect and optimize digital systems in
+          high-impact environments.
+        </p>
+      </div>
     </section>
     <section class="skills" id="skills">
       <h2>&lt; skills /&gt;</h2>
@@ -126,27 +129,87 @@
       <h2>&lt; previous work /&gt;</h2>
       <h3>education</h3>
       <br />
-      <h5>Pursuing Bachelor of Science in Computer Science</h5>
-      <h6>Expected graduation: June 2026</h6>
-      <h5>Portland State University, Portland, OR</h5>
-      <h5>Active on President's and Dean's Lists</h5>
-      <h5>Currently studying for the CompTIA+ Security certification</h5>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <h5>Bachelor of Science in Computer Science</h5>
+          <h6 class="grad-date">Expected: June 2026</h6>
+        </div>
+        <h6>Portland State University, Portland OR</h6>
+        <br />
+        <p>President's & Dean's List</p>
+        <p>Studying for CompTIA Security+ certification</p>
+      </div>
       <br />
       <h3>work experience</h3>
       <br />
-      <div class="dates-worked">
-        <h5>march 2021 - Present</h5>
-        <h5>january 2021 - april 2022</h5>
-        <h5>june 2019 - may 2021</h5>
-      </div>
-      <div class="work-company-title">
-        <h5>Medical Technician</h5>
-        <h6>Ogata Eyecare, Tigard, OR</h6>
-        <h5>Sales Associate/Optician</h5>
-        <h6>Luxottica, Tigard, OR</h6>
-        <h5>Supervisor</h5>
-        <h6>Jamba, Tigard, OR</h6>
-        <br />
+      <div class="work-entries">
+        <div class="work-entry">
+          <div class="work-left">
+            <h5>Medical Technician</h5>
+            <h6>Ogata Eyecare, Tigard, OR</h6>
+            <br />
+            <ul class="job-description">
+              <li>
+                Utilized specialized software to manage and maintain medical
+                records, ensuring accuracy and confidentiality.
+              </li>
+              <li>
+                Orchestrated patient scheduling, registration, and meticulous
+                data entry for a high-volume medical practice serving over
+                50,000 individuals.
+              </li>
+              <li>
+                Diligently updated and maintained health records in compliance
+                with stringent HIPAA regulations
+              </li>
+            </ul>
+          </div>
+          <h5 class="work-date">march 2021 - Present</h5>
+        </div>
+        <div class="work-entry">
+          <div class="work-left">
+            <h5>Sales Associate/Optician</h5>
+            <h6>Luxottica, Tigard, OR</h6>
+            <br />
+            <ul class="job-description">
+              <li>
+                Cultivated strong relationships with customers to discern their
+                requirements and promote premium eyewear solutions.
+              </li>
+              <li>
+                Demonstrated adeptness in upselling techniques, consistently
+                surpassing sales objectives
+              </li>
+              <li>
+                Supported the sales team by proficiently operating cash
+                registers, maintaining the cleanliness and organization of the
+                sales floor, and overseeing inventory management as needed.
+              </li>
+            </ul>
+          </div>
+          <h5 class="work-date">january 2021 - april 2022</h5>
+        </div>
+        <div class="work-entry">
+          <div class="work-left">
+            <h5>Supervisor</h5>
+            <h6>Jamba, Tigard, OR</h6>
+            <br />
+            <ul class="job-description">
+              <li>
+                Recognized and implemented process enhancements to optimize
+                operational efficiency and elevate team productivity within a
+                fast-paced environment, leading to streamlined workflows,
+                reduced work hours, and minimized labor costs.
+              </li>
+              <li>
+                Proficiently utilized software tools for meticulous inventory
+                management, labor tracking, and financial oversight, ensuring
+                seamless operations and resource optimization
+              </li>
+            </ul>
+          </div>
+          <h5 class="work-date">june 2019 - may 2021</h5>
+        </div>
       </div>
       <a
         href="Kaitlyn Harvey.pdf"
@@ -158,25 +221,43 @@
     </section>
     <section class="projects" id="projects">
       <h2>&lt; projects /&gt;</h2>
-      <div class="projects-container">
-        <h5>Data Processing System</h5>
-        <h6>Project Scope</h6>
-        <br />
-        <p>
-          Worked as part of a five-member team to develop a data processing
-          system that supported the authentication of multiple terminals,
-          service recording and billing, report generation, and user and service
-          management.
-        </p>
-        <br />
-        <h5>Capstone Project - Database System</h5>
-        <h6>Project Scope</h6>
-        <br />
-        <p>
-          Worked as part of a seven-member team to develop a desktop database
-          application that is responsible for parsing, querying, and analyzing
-          clinical data for a biotech startup named Madorra.
-        </p>
+      <div class="projects-grid">
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <i class="fa-solid fa-server fa-2x"></i>
+              <h5>Data Processing System</h5>
+              <p class="flip-hint">hover to learn more</p>
+            </div>
+            <div class="flip-back">
+              <h5>Data Processing System</h5>
+              <ul class="flip-list">
+                <li>Five-member team project</li>
+                <li>Multi-terminal authentication</li>
+                <li>Service recording & billing</li>
+                <li>Report generation & user management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <i class="fa-solid fa-database fa-2x"></i>
+              <h5>Capstone — Database System</h5>
+              <p class="flip-hint">hover to learn more</p>
+            </div>
+            <div class="flip-back">
+              <h5>Capstone — Database System</h5>
+              <ul class="flip-list">
+                <li>Seven-member team project</li>
+                <li>Desktop database application</li>
+                <li>Parsed & queried clinical data</li>
+                <li>Built for biotech startup Madorra</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="contact" id="contact">
