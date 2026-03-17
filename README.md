@@ -1,6 +1,7 @@
 Portfolio Website
 
 How to run
+Click website link: https://kaitlynh31.github.io/
 
 Sources
 https://www.w3schools.com/html/html_images.asp
@@ -23,4 +24,4 @@ https://www.youtube.com/watch?v=7vp2Pc_0WLs&t=1104s
 https://www.youtube.com/watch?v=e5AwNU3Y2es
 
 Where the site is deployed
-https://kaitlynh31.github.io/
+GitHub Pages
