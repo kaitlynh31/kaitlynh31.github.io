@@ -1002,3 +1002,16 @@ body {
 .flip-card.flipped .flip-inner {
   transform: rotateY(180deg);
 }
+@media (hover: none) {
+  .work-entry:hover {
+    background: rgba(135, 174, 115, 0.07);
+    box-shadow: none;
+  }
+  .work-entry:hover .job-description {
+    max-height: 0;
+    opacity: 0;
+  }
+  .flip-card:hover .flip-inner {
+    transform: none;
+  }
+}

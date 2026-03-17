@@ -60,24 +60,34 @@ document.querySelectorAll(".btn").forEach((btn) => {
     });
   });
 });
+// work entries - close others, toggle clicked
 document.querySelectorAll(".work-entry").forEach((entry) => {
-  entry.addEventListener("click", () => {
-    entry.classList.toggle("active");
-  });
-});
-
-document.querySelectorAll(".flip-card").forEach((card) => {
-  card.addEventListener("click", () => {
-    card.classList.toggle("flipped");
-  });
-});
-document.querySelectorAll(".work-entry").forEach((entry) => {
-  entry.addEventListener("click", () => {
+  entry.addEventListener("click", (e) => {
+    e.stopPropagation();
     const isActive = entry.classList.contains("active");
-
     document
       .querySelectorAll(".work-entry")
       .forEach((e) => e.classList.remove("active"));
     if (!isActive) entry.classList.add("active");
   });
+});
+
+document.querySelectorAll(".flip-card").forEach((card) => {
+  card.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const isFlipped = card.classList.contains("flipped");
+    document
+      .querySelectorAll(".flip-card")
+      .forEach((c) => c.classList.remove("flipped"));
+    if (!isFlipped) card.classList.add("flipped");
+  });
+});
+
+document.addEventListener("click", () => {
+  document
+    .querySelectorAll(".work-entry")
+    .forEach((e) => e.classList.remove("active"));
+  document
+    .querySelectorAll(".flip-card")
+    .forEach((c) => c.classList.remove("flipped"));
 });
