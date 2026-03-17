@@ -60,3 +60,24 @@ document.querySelectorAll(".btn").forEach((btn) => {
     });
   });
 });
+document.querySelectorAll(".work-entry").forEach((entry) => {
+  entry.addEventListener("click", () => {
+    entry.classList.toggle("active");
+  });
+});
+
+document.querySelectorAll(".flip-card").forEach((card) => {
+  card.addEventListener("click", () => {
+    card.classList.toggle("flipped");
+  });
+});
+document.querySelectorAll(".work-entry").forEach((entry) => {
+  entry.addEventListener("click", () => {
+    const isActive = entry.classList.contains("active");
+
+    document
+      .querySelectorAll(".work-entry")
+      .forEach((e) => e.classList.remove("active"));
+    if (!isActive) entry.classList.add("active");
+  });
+});

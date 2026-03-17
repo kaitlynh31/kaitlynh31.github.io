@@ -986,3 +986,19 @@ body {
   background: rgba(135, 174, 115, 0.15);
   box-shadow: 0 4px 16px rgba(135, 174 115, 0.2);
 }
+.work-entry:hover,
+.work-entry.active {
+  background: rgba(135, 174, 115, 0.15);
+  box-shadow: 0 4px 16px rgba(135, 174, 115, 0.2);
+}
+
+.work-entry:hover .job-description,
+.work-entry.active .job-description {
+  max-height: 200px;
+  opacity: 1;
+}
+
+.flip-card:hover .flip-inner,
+.flip-card.flipped .flip-inner {
+  transform: rotateY(180deg);
+}
