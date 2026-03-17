@@ -20,6 +20,7 @@ https://www.youtube.com/watch?v=ldwlOzRvYOU&t=6318s
 https://www.youtube.com/watch?v=z_qmpklj89s&t=1558s
 https://www.youtube.com/watch?v=ZPMtug9qExk
 https://www.youtube.com/watch?v=7vp2Pc_0WLs&t=1104s
+https://www.youtube.com/watch?v=e5AwNU3Y2es
 
 Where the site is deployed
 https://kaitlynh31.github.io/
