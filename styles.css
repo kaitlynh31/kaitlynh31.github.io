@@ -973,6 +973,7 @@ body {
   font-size: 0.85rem;
 }
 /*about section*/
+
 .about-card {
   border: 1.5px solid #87ae7321;
   border-radius: 12px;
@@ -1014,4 +1015,13 @@ body {
   .flip-card:hover .flip-inner {
     transform: none;
   }
+}
+
+.portland-img {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
