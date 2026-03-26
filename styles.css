@@ -24,7 +24,7 @@ h2 {
   padding-top: 50px;
 }
 h1 {
-  letter-spacing: -0.02em;
+  letter-spacing: 0.03em;
 }
 h2 {
   display: flex;
@@ -979,14 +979,16 @@ body {
   border-radius: 12px;
   padding: 1.5rem 2rem;
   background: rgba(135, 174, 115, 0.07);
-  transition: all 0.2s ease;
+  backdrop-filter: blur(10px);
   max-width: 550px;
   margin: 0 auto;
+  border-left: 5px solid #87ae73d0;
 }
 .about-card:hover {
   background: rgba(135, 174, 115, 0.15);
   box-shadow: 0 4px 16px rgba(135, 174 115, 0.2);
 }
+
 .work-entry:hover,
 .work-entry.active {
   background: rgba(135, 174, 115, 0.15);
