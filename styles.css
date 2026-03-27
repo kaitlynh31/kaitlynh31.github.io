@@ -10,6 +10,7 @@ html {
   font-family: "Inter", sans-serif;
   background-color: rgba(210, 180, 140, 0.137);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 code,
 .terminal {
@@ -56,7 +57,7 @@ section {
   border-radius: 1em;
 }
 section {
-  scroll-margin-top: 60px;
+  scroll-margin-top: 10px;
 }
 /*navigation bar*/
 nav {
@@ -104,10 +105,8 @@ nav li:first-child {
   border: 2px solid #87ae73;
 }
 #desktop-nav li:first-child a {
-  font-weight: bold;
   font-size: 1.1rem;
   letter-spacing: 0.05em;
-  color: #87ae73;
 }
 #hamburger-nav {
   display: none;
