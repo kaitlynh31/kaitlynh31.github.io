@@ -91,3 +91,9 @@ document.addEventListener("click", () => {
     .querySelectorAll(".flip-card")
     .forEach((c) => c.classList.remove("flipped"));
 });
+
+document.querySelectorAll(".flip-card").forEach((card) => {
+  card.addEventListener("click", () => {
+    card.classList.toggle("flipped");
+  });
+});
