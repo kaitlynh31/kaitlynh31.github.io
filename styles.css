@@ -3,11 +3,16 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: all 0.2s ease;
 }
 /*base*/
 html {
-  font-family: monospace;
+  font-family: "Inter", sans-serif;
   background-color: rgba(210, 180, 140, 0.137);
+}
+code,
+.terminal {
+  font-family: monospace;
 }
 body {
   margin: 0;
@@ -19,6 +24,7 @@ h2 {
   display: flex;
   align-items: center;
   font-size: clamp(2.5rem, 4vw, 4.5rem);
+  font-weight: 700;
   margin-bottom: 30px;
   color: #87ae73;
   padding-top: 50px;
@@ -35,6 +41,7 @@ h3 {
   font-size: 2rem;
 }
 p {
+  font-size: 1.05rem;
   max-width: 65ch;
   line-height: 1.6;
 }
@@ -44,6 +51,13 @@ section {
   margin: auto;
   padding: clamp(1rem, 3vw, 3rem);
   border-radius: 1em;
+}
+:root {
+  --primary: #87ae73;
+  --primary-light: rgba(135, 174, 115, 0.1);
+  --primary-dark: #6f8f5d;
+  --text-main: #111;
+  --text-muted: #555;
 }
 /*navigation bar*/
 nav {
@@ -200,11 +214,6 @@ main img {
   transition: all 0.4s ease;
   cursor: pointer;
   flex-shrink: 0;
-}
-.headshot-img:hover {
-  width: 700px;
-  height: 460px;
-  border-radius: 24px;
 }
 /*terminal*/
 .terminal {
@@ -656,10 +665,11 @@ body {
 }
 
 .flip-card {
-  width: 280px;
-  height: 260px;
+  width: 320px;
+  height: 300px;
   perspective: 1000px;
   cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .flip-inner {
@@ -671,7 +681,7 @@ body {
 }
 
 .flip-card:hover .flip-inner {
-  transform: rotateY(180deg);
+  transform: translateY(-5px);
 }
 
 .flip-front,
@@ -960,17 +970,18 @@ body {
   transform: translateX(6px);
 }
 .timeline-content p {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .timeline-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 1rem;
+  font-size: 1.3rem;
 }
 .grad-date {
   white-space: nowrap;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 /*about section*/
 
@@ -983,6 +994,7 @@ body {
   max-width: 550px;
   margin: 0 auto;
   border-left: 5px solid #87ae73d0;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
 }
 .about-card:hover {
   background: rgba(135, 174, 115, 0.15);
