@@ -26,7 +26,7 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-const sparkleSymbols = ["✦", "✧", "✦", "✧"];
+const sparkleSymbols = ["✦", "✧"];
 
 document.querySelectorAll(".btn").forEach((btn) => {
   btn.addEventListener("mouseenter", (e) => {
