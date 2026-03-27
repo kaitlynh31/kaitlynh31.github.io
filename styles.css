@@ -55,7 +55,9 @@ section {
   padding: clamp(1rem, 3vw, 3rem);
   border-radius: 1em;
 }
-
+section {
+  scroll-margin-top: 60px;
+}
 /*navigation bar*/
 nav {
   overflow: visible;
