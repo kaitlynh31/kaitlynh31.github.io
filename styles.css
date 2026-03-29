@@ -8,7 +8,7 @@
 /*base*/
 html {
   font-family: "Inter", sans-serif;
-  background-color: rgba(210, 180, 140, 0.137);
+  background-color: rgba(210, 180, 140, 0);
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -51,7 +51,7 @@ p {
 header,
 section {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: clamp(1rem, 3vw, 3rem);
   border-radius: 1em;
@@ -107,6 +107,7 @@ nav li:first-child {
 #desktop-nav li:first-child a {
   font-size: 1.1rem;
   letter-spacing: 0.05em;
+  color: #87ae73;
 }
 #hamburger-nav {
   display: none;
@@ -176,6 +177,25 @@ nav li:first-child {
 .menu-links a:hover {
   background-color: #87ae73;
   color: white;
+}
+.headshot-img {
+  width: clamp(260px, 28vw, 520px);
+  height: auto;
+  aspect-ratio: 3.4 / 4;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
+  box-shadow: 8px 12px 40px rgba(100, 148, 237, 0.35);
+  transition:
+    transform 0.4s ease,
+    border-radius 0.4s ease;
+  cursor: pointer;
+  flex-shrink: 0;
+  max-width: 100%;
+  min-width: unset;
+}
+.headshot-img:hover {
+  transform: scale(1.02);
 }
 /*main*/
 main {
@@ -497,8 +517,7 @@ main img {
   }
   .headshot-img {
     width: 300px;
-    height: 360px;
-    min-width: 300px;
+    aspect-ratio: 3.4 / 4;
   }
   figure {
     order: -1;
@@ -510,86 +529,72 @@ main img {
 
 @media (min-width: 1025px) {
   .headshot-img {
-    width: 300px;
-    height: 360px;
+    width: 320px;
+    aspect-ratio: 3.4 / 4;
     padding: 0;
     margin: 0;
   }
-  @media (min-width: 1400px) {
-    .headshot-img {
-      width: 520px;
-      height: 620px;
-      min-width: 520px;
-    }
-    .terminal {
-      width: 640px;
-    }
-    h1 {
-      font-size: 4rem;
-    }
-    main {
-      gap: 4rem;
-      padding: 4rem;
-      justify-content: center;
-    }
-    .headshot-img {
-      width: 650px;
-      height: 460px;
-      min-width: 700px;
-      border-radius: 24px;
-    }
-    .hero-right {
-      align-items: center;
-      text-align: center;
-    }
-    h1 {
-      font-size: 4rem;
-      padding-bottom: 50px;
-    }
-    .headshot-img:hover {
-      width: 650px;
-      height: 460px;
-      border-radius: 24px;
-    }
+}
+@media (min-width: 1400px) {
+  .terminal {
+    width: 640px;
   }
-
-  @media (min-width: 1800px) {
-    .headshot-img {
-      width: 620px;
-      height: 740px;
-      min-width: 620px;
-    }
-    .hero-right {
-      align-items: center;
-      text-align: center;
-    }
-    h1 {
-      font-size: 4rem;
-    }
-    .terminal {
-      width: 780px;
-    }
-    h1 {
-      font-size: 4rem;
-    }
-    main {
-      gap: 6rem;
-      padding: 6rem;
-    }
-    .headshot-img {
-      width: 700px;
-      height: 460px;
-      min-width: 700px;
-      border-radius: 24px;
-    }
-
-    .headshot-img:hover {
-      width: 700px;
-      height: 460px;
-      border-radius: 24px;
-    }
+  h1 {
+    font-size: 4rem;
+  }
+  main {
+    gap: 4rem;
+    padding: 4rem;
+    justify-content: center;
+  }
+  .headshot-img {
+    width: 480px;
+    aspect-ratio: 16 / 12;
+    border-radius: 24px;
+  }
+  .hero-right {
+    align-items: center;
+    text-align: center;
+  }
+  h1 {
+    font-size: 4rem;
+    padding-bottom: 50px;
+  }
+  .headshot-img:hover {
+    transform: scale(1.02);
+    border-radius: 24px;
   }
 }
+
+@media (min-width: 1800px) {
+  .headshot-img {
+    width: 560px;
+    aspect-ratio: 3.4 / 4;
+    border-radius: 24px;
+  }
+  .hero-right {
+    align-items: center;
+    text-align: center;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .terminal {
+    width: 780px;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  main {
+    gap: 6rem;
+    padding: 6rem;
+  }
+  .headshot-img:hover {
+    transform: scale(1.02);
+    border-radius: 24px;
+  }
+}
+
 @media (max-width: 768px) {
   #desktop-nav {
     display: none;
@@ -714,7 +719,7 @@ body {
 
 .flip-front {
   background: rgba(135, 174, 115, 0.07);
-  color: #87ae73;
+  /*color: #87ae73;*/
 }
 
 .flip-back {
@@ -752,7 +757,7 @@ body {
 
 .flip-hint {
   font-size: 0.75rem;
-  color: #aaa;
+  color: #878787;
   font-style: italic;
 }
 
@@ -892,10 +897,15 @@ body {
   box-shadow: 0 4px 16px rgba(135, 174, 115, 0.2);
   transition: all 0.2s ease;
 }
+.work-entries h5 {
+  font-size: 1rem;
+}
 .work-date {
   color: black;
   white-space: nowrap;
   margin-left: 2rem;
+  font-size: 0.7rem;
+  font-weight: 600;
 }
 .job-description {
   list-style-type: none;
@@ -992,7 +1002,8 @@ body {
 }
 .grad-date {
   white-space: nowrap;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  font-weight: 600;
 }
 /*about section*/
 
