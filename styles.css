@@ -525,15 +525,6 @@ main img {
   h1 {
     font-size: 3.5rem;
   }
-  .work-entry {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-
-  .work-date {
-    margin-left: 0;
-  }
 
   .job-description {
     max-height: none;
@@ -924,7 +915,7 @@ body {
 .work-date {
   color: black;
   white-space: nowrap;
-  margin-left: 2rem;
+  margin-left: 0;
   font-size: 0.7rem;
   font-weight: 600;
 }
