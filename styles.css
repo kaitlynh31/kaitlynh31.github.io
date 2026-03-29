@@ -525,6 +525,27 @@ main img {
   h1 {
     font-size: 3.5rem;
   }
+  .work-entry {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .work-date {
+    margin-left: 0;
+  }
+
+  .job-description {
+    max-height: none;
+    opacity: 1;
+    overflow: visible;
+  }
+
+  .job-description li {
+    font-size: 0.85rem;
+    white-space: normal;
+    word-break: break-word;
+  }
 }
 
 @media (min-width: 1025px) {
