@@ -1039,38 +1039,80 @@ body {
 .flip-card.flipped .flip-inner {
   transform: rotateY(180deg);
 }
-@media (hover: none) {
-  *:hover {
-    transform: none !important;
-    box-shadow: none !important;
+.flip-card.flipped .flip-inner {
+  transform: rotateY(180deg);
+}
+.work-entry.active .job-description {
+  max-height: 200px;
+  opacity: 1;
+}
+@media (hover: hover) {
+  nav ul li:hover {
+    background-color: #87ae73;
+  }
+  nav ul li a:hover {
+    color: white;
+  }
+  .headshot-img:hover {
+    transform: scale(1.02);
+  }
+  .menu-links a:hover {
+    background-color: #87ae73;
+    color: white;
   }
   .work-entry:hover {
-    background: rgba(135, 174, 115, 0.07);
-    box-shadow: none;
+    background: rgba(135, 174, 115, 0.15);
+    box-shadow: 0 4px 16px rgba(135, 174, 115, 0.2);
   }
   .work-entry:hover .job-description {
-    max-height: 0;
-    opacity: 0;
+    max-height: 200px;
+    opacity: 1;
+  }
+  .job-description li:hover {
+    color: #87ae73;
+    transform: translateX(4px);
+  }
+  .job-description li:hover::before {
+    transform: rotate(180deg) scale(1.4);
+    color: #f9c74f;
+  }
+  .timeline-content:hover {
+    background: rgba(135, 174, 115, 0.15);
+    box-shadow: 0 4px 16px rgba(135, 174, 115, 0.2);
+    transform: translateX(6px);
+  }
+  .about-card:hover {
+    background: rgba(135, 174, 115, 0.15);
   }
   .flip-card:hover .flip-inner {
-    transform: none;
+    transform: rotateY(180deg);
   }
-  button,
-  .btn,
-  a {
-    min-height: 44px;
+  .social-links:hover {
+    scale: 1.3;
+    color: white;
+    background-color: #87ae73;
   }
-  .menu-links a {
-    padding: 16px 24px;
+  .btn:hover::before {
+    transform: scaleX(1);
   }
-  .btn:active::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(255, 255, 255, 0.2);
+  .btn:hover {
+    color: #1a1a1a;
+  }
+  .btn-tools:hover::before {
+    transform: scaleX(1);
+  }
+  .btn-tools:hover {
+    color: #1a1a1a;
+  }
+  .nav-btn:hover {
+    background-color: #87ae73;
+    color: white;
+  }
+  .contact-right button:hover {
+    box-shadow: 0 4px 18px rgba(100, 148, 237, 0.5);
+    scale: 1.03;
   }
 }
-
 .portland-img {
   width: 100vw;
   position: relative;
