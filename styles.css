@@ -27,7 +27,6 @@ h2 {
   display: flex;
   align-items: center;
   font-size: clamp(2.5rem, 4vw, 4.5rem);
-  font-weight: 700;
   margin-bottom: 30px;
   color: #87ae73;
   padding-top: 18px;
@@ -108,6 +107,7 @@ nav li:first-child {
   font-size: 1.1rem;
   letter-spacing: 0.05em;
   color: #87ae73;
+  font-weight: 600;
 }
 #hamburger-nav {
   display: none;
@@ -560,9 +560,17 @@ main img {
     justify-content: center;
   }
   .headshot-img {
-    width: 480px;
-    aspect-ratio: 16 / 12;
-    border-radius: 24px;
+    max-width: 100%;
+    min-width: unset;
+    width: clamp(260px, 28vw, 520px);
+    height: auto;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
+    box-shadow: 8px 12px 40px rgba(100, 148, 237, 0.35);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    flex-shrink: 0;
   }
   .hero-right {
     align-items: center;
@@ -580,9 +588,11 @@ main img {
 
 @media (min-width: 1800px) {
   .headshot-img {
-    width: 560px;
-    aspect-ratio: 3.4 / 4;
+    max-width: 100%;
+    margin: auto;
     border-radius: 24px;
+    object-fit: cover;
+    object-position: bottom;
   }
   .hero-right {
     align-items: center;
@@ -1055,7 +1065,7 @@ body {
   transform: rotateY(180deg);
 }
 .work-entry.active .job-description {
-  max-height: 200px;
+  max-height: 600px;
   opacity: 1;
 }
 @media (hover: hover) {
